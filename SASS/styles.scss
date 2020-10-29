@@ -1,47 +1,27 @@
-/* variables */
+// NORMALIZACION DE LOS NAVEGADORES //
+@import "component/browse/reset";
 
-$font-base: 16px;
-$font-color-base: #blue;
-$font-family-base: sans-serif;
-$color-base: #ebebeb 
+// VARIABLES //
+@import "component/variables";
 
-/* base */
-html{
-   font-family: sans-serif;
-   font-style: italic;
-}
+// TIPOGRAFIAS //
+@import "component/tipografia";
 
-body{
-  display: flex;
-  justify-content: center;
-}
+// MIXINS //
+@import "component/mixins";
 
-/* layouts */
+// FONDOS //
+@import "component/layouts";
 
-.container{
-  display: grid;
-  grid-template: {
-    column: 1fr;
-    rows: repeat (3,1fr);
-  };
-  background-color: $color-base;
-}
+// BOTONES //
+@import "component/botones";
 
-.header{
-  &__menu{
-    display: flex;
-    justify-content: space-between;
-  }
-  &__banner{
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-}
 
-.main{
+// GRIDS //
+@import "component/grids";
 
-}
+// FORMULARIO //
+@import "component/formulario";
 
-.footer{
 
-}
+
